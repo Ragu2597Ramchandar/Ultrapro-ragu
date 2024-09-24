@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body,.bg-nav{
+    background:#2d2622 !important;
+    font-family: 'ubuntu';
+}
+.bg-nav{
+    z-index: 9999;  /* top of all elements*/
+}
+.navbar-toggler-icon{
+    color:#d8a87f;
+    background-color:#d8ab84;
+}
+.blog-css{
+  color: #ef7a02 !important;
+}
+.btn-whitepaper{
+    border-color: white !important;
+    color: white !important;
+}
+.btn-contact{
+    color: black !important;
+    background-color: #ef7a02 !important;
+    border: #ef7a02 !important;
+}
+
+
+  
+  
+
+/* banner styling */
+.banner-container {
+    min-height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center; /* Centers the banner horizontally */
+    align-items: center; /* Centers the banner vertically */
+    padding: 0 15px; /* Ensures padding on mobile devices */
+  }
+  
+  .banner-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensures the image scales properly */
+  }
+  
+  /* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-collapse {
+      text-align: center;
+    }
+  
+    .btn-contact, .btn-whitepaper {
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-brand img {
+      max-width: 150px;
+    }
+  
+    .banner-container {
+      padding: 0;
+    }
+  
+    .banner-img {
+      max-width: 90%; /* Reduces the size of the banner on small devices */
+    }
+  }
+  
+  
+  /* Bordered Box */
+.bordered-box {
+    background-color: #000; /* Black background */
+    border: 2px solid #fff; /* White border */
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    width: 80%; /* Centered box */
+    border-radius: 5px;
+  }
+  
+  /* Bordered Links as plain text */
+  .bordered-link {
+    color: #fff; /* White text */
+    cursor: pointer;
+    font-size: 18px; /* Adjust font size as needed */
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Active Link Button */
+  .active-link {
+    background-color:#ef7a02; /* Yellow background when active */
+    color: white; /* White text when active */
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .bordered-box {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    
+    .bordered-link {
+      margin-bottom: 10px;
+      text-align: center;
+      flex: 1 0 45%;
+    }
+  }
+  
+
+
+
+.bordered-box {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  text-align: center;
+  width: fit-content;
+  margin-top: 20px; /* Adjust to reduce space between banner and bordered box */
+}
+
+.bordered-link {
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.active-link {
+  background-color: #ef7a02;
+  color: white;
+}
+
+/* announcement styles */
+/* Full-width image inside the card */
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures the image fully covers the card without leaving space */
+  border-top-left-radius: 15px; /* Rounded top-left corner */
+  border-top-right-radius: 15px; /* Rounded top-right corner */
+}
+
+/* Rounded corners for the entire card */
+.rounded-card {
+  border-radius: 15px; /* Rounding for the card body */
+}
+
+/* Styling for active pagination */
+.bg-warning {
+  background-color: #ffc107 !important; /* Yellow background for active pagination */
+}
+
+.text-dark {
+  color: #343a40 !important; /* Dark text for active pagination */
+}
+
+/* General card and pagination styling */
+.bg-dark {
+  background-color: #343a40 !important; /* Dark background for card */
+}
+
+.text-white {
+  color: white !important; /* White text for card content */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 150px; /* Adjust the height for smaller screens */
+  }
+}
